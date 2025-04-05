@@ -1,0 +1,27 @@
+Bitcoin Accountability Pacts
+Bitcoin Logo
+"Enforce personal promises with Bitcoin Script - break them, burn sats."
+
+🏆 MIT Bitcoin Hackathon 2025 Submission
+Demo: https://bitcoinpacts.carrd.co/ | Video Walkthrough: https://youtu.be/_7LOd4dMOU0?si=j157f4wQANJuCxvU
+
+🚀 Key Innovation
+First behavioral accountability system using:
+✔ Native Bitcoin Script (no altcoins/smart contracts)
+✔ Loss aversion psychology (sat burning for failure)
+✔ Censorship-resistant promises (OP_RETURN/covenants) 
+
+ Why Bitcoin?
+
+"Traditional commitment apps (e.g., StickK) require trust in centralized entities. Bitcoin Pacts make accountability trustless and immutable."
+
+🛠️ Technical Implementation
+Core Components
+Component	        Implementation Details
+Promise Engine	  PSBTs with CLTV/CSV time locks
+Data Storage	    OP_RETURN (testnet) → Taproot covenants (mainnet-ready)
+Failure Penalty	   Pre-signed tx burning pledged UTXO
+Frontend	         Carrd.co + Google Forms PSBT generator
+
+
+                            
