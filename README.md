@@ -1,8 +1,27 @@
+[![MIT Bitcoin Hackathon 2025](https://img.shields.io/badge/MIT-Bitcoin_Hackathon-orange)](https://bitcoin-hackathon.org)
+
 #  Bitcoin Accountability Pacts  
 
 **Lock promises on-chain. Break them, burn sats.**  
 
 [![Live Demo](https://img.shields.io/badge/DEMO-bitcoinpacts.carrd.co-orange)](https://bitcoinpacts.carrd.co)  
+## 🚀 For MIT Bitcoin Hackathon Judges
+
+### Key Innovations
+- **100% Bitcoin-native**  
+  Uses OP_RETURN + time-locked transactions (no ETH/smart contracts)  
+- **Behavioral economics hack**  
+  Sat burning leverages loss aversion psychology  
+- **Testnet-to-mainnet path**  
+  Demo works today, ready for Taproot covenants  
+
+### Technical Highlights
+```mermaid
+graph LR
+A[User Pledge] --> B(OP_RETURN)
+B --> C{Met Goal?}
+C -->|Yes| D[Funds Released]
+C -->|No| E[Sats Burned]
 
 ## How It Works  
 1. Users submit promises via Google Form  
@@ -27,18 +46,5 @@ Mainnet readiness: Designed for covenant-friendly Taproot upgrades
 - [Process Documentation](docs/PROCESS.md)
 
 
-## How It Works (Technical Deep Dive)
-```mermaid
-graph TD
-    A[User Pledge] --> B(OP_RETURN Commitment)
-    B --> C{Met Deadline?}
-    C -->|Yes| D[Funds Released]
-    C -->|No| E[Sats Burned]
 
-
-
-## Hackathon Notes
-- **Development Time**: 24 hours 
-- **Key Innovation**: First behavioral covenant using Bitcoin Script (no ETH/smart contracts)
-- **Judges**: See `Future Work` for scalability roadmap
 
