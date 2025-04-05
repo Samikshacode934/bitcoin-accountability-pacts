@@ -1,0 +1,2 @@
+bitcoin-utils==1.1.0
+python-bitcointx>=1.0
