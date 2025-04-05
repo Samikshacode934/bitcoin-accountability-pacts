@@ -24,4 +24,21 @@ Mainnet readiness: Designed for covenant-friendly Taproot upgrades
 
 - # Documents
 - [Project Proposal].[(assets/document)](https://docs.google.com/document/d/1uJhbjUTjKy0dbGgQiF-I1YKaK71hnEm90Jliaa66AKk/edit?tab=t.0
-- [Process Documentation](docs/PROCESS.md)  
+- [Process Documentation](docs/PROCESS.md)
+
+
+## How It Works (Technical Deep Dive)
+```mermaid
+graph TD
+    A[User Pledge] --> B(OP_RETURN Commitment)
+    B --> C{Met Deadline?}
+    C -->|Yes| D[Funds Released]
+    C -->|No| E[Sats Burned]
+
+
+
+## Hackathon Notes
+- **Development Time**: 24 hours 
+- **Key Innovation**: First behavioral covenant using Bitcoin Script (no ETH/smart contracts)
+- **Judges**: See `Future Work` for scalability roadmap
+
